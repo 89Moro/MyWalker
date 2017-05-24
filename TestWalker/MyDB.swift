@@ -22,7 +22,8 @@ class MyDB
     private let kmTot    = Expression<Double?>("km_tot")
     
     private let singoli   = Table("singoli")
-    private let path_id   = Expression<Int64>("id")
+    private let single_id = Expression<Int64>("id")
+    private let path_id   = Expression<Int64>("path_id")
     private let longitude = Expression<Double>("longitude")
     private let latitude  = Expression<Double>("latitude")
     
@@ -61,7 +62,8 @@ class MyDB
             {
                 table
                 in
-                table.column(path_id,primaryKey:true)
+                table.column(single_id,primaryKey:true)
+                
                 table.column(longitude)
                 table.column(latitude)
                 print("Tabella Singoli creata")
