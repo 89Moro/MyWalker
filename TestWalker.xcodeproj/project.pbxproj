@@ -513,7 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA27EC30950BBE9CB80A2A79 /* Pods-TestWalker.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = TestWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moreno.test.TestWalker;
@@ -526,7 +526,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 972920208201094D9346F71C /* Pods-TestWalker.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = TestWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moreno.test.TestWalker;

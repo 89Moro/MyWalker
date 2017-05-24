@@ -15,11 +15,16 @@ class MyDB
     
     private let db: Connection?
     
-    private let contacts = Table("contacts")
+    private let percorsi = Table("percorsi")
     private let id       = Expression<Int64>("id")
-    private let data     = Expression<Date?>("id")
-    private let tempoTot = Expression<Double?>("cognome")
-    private let kmTot    = Expression<Double?>("telefono")
+    private let data     = Expression<Date?>("data")
+    private let tempoTot = Expression<Double?>("tempo_tot")
+    private let kmTot    = Expression<Double?>("km_tot")
+    
+    private let singoli   = Table("singoli")
+    private let path_id   = Expression<Int64>("id")
+    private let longitude = Expression<Double>("longitude")
+    private let latitude  = Expression<Double>("latitude")
     
     private init()
     {
@@ -31,7 +36,7 @@ class MyDB
         catch
         {
             db = nil
-            print ("impossibile aprire database")
+            print ("Impossibile aprire database")
         }
 
     }
