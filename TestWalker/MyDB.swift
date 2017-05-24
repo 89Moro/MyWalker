@@ -40,4 +40,82 @@ class MyDB
         }
 
     }
+    
+    func createTable()
+    {
+        do
+        {
+            try db!.run(percorsi.create(ifNotExists : true) {
+                table
+                in
+                table.column(id,primaryKey:true)
+                table.column(data)
+                table.column(tempoTot)
+                table.column(kmTot)
+                print("Tabella Percorsi creata")
+            })
+            
+            try db!.run(singoli.create(ifNotExists : true) {
+                table
+                in
+                table.column(path_id,primaryKey:true)
+                table.column(longitude)
+                table.column(latitude)
+                print("Tabella Singoli creata")
+            })
+        }
+        catch
+        {
+            print("Impossibile creare tabelle")
+        }
+    }
+    
+    func addPercorso(cdata: Date, ctempoTot:Double, ckmTot:Double) -> Int64
+    {
+        do
+        {
+            let insert = percorsi.insert(data <- cdata, tempoTot <- ctempoTot, kmTot <- ckmTot)
+            
+            let id = try db!.run(insert)
+            
+            return id
+        }
+        catch
+        {
+            print ("Insert fallito")
+            return -1
+        }
+    }
+    
+    func getPercorsi() -> [Percorso] {
+        var percorsi = [Percorso]()
+        
+        do{
+            for percorso in try db!.prepare(self.percorsi) {
+                percorsi.append(Percorso(id:percorso[id], data: percorso[data]!, tempoTot: percorso[tempoTot]!, kmTot: percorso[kmTot]!))
+            }
+        }
+        catch
+        {
+            print("Select fallito")
+        }
+        
+        return percorsi
+        
+    }
+    
+    func deleteContact(cid: Int64) -> Bool {
+        do
+        {
+            let percorso = percorsi.filter(id == cid)
+            try db!.run(percorso.delete())
+            return true
+        }
+        catch
+        {
+            print ("Delete fallito")
+            return false
+        }
+    }
+    
 }
