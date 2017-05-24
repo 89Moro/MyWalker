@@ -30,7 +30,8 @@ class MyDB
     {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         
-        do {
+        do
+        {
             db = try Connection("\(path)/MyDB.sqlite3")
         }
         catch
@@ -45,7 +46,8 @@ class MyDB
     {
         do
         {
-            try db!.run(percorsi.create(ifNotExists : true) {
+            try db!.run(percorsi.create(ifNotExists : true)
+            {
                 table
                 in
                 table.column(id,primaryKey:true)
@@ -55,7 +57,8 @@ class MyDB
                 print("Tabella Percorsi creata")
             })
             
-            try db!.run(singoli.create(ifNotExists : true) {
+            try db!.run(singoli.create(ifNotExists : true)
+            {
                 table
                 in
                 table.column(path_id,primaryKey:true)
@@ -87,11 +90,13 @@ class MyDB
         }
     }
     
-    func getPercorsi() -> [Percorso] {
+    func getPercorsi() -> [Percorso]
+    {
         var percorsi = [Percorso]()
         
         do{
-            for percorso in try db!.prepare(self.percorsi) {
+            for percorso in try db!.prepare(self.percorsi)
+            {
                 percorsi.append(Percorso(id:percorso[id], data: percorso[data]!, tempoTot: percorso[tempoTot]!, kmTot: percorso[kmTot]!))
             }
         }
@@ -104,7 +109,8 @@ class MyDB
         
     }
     
-    func deleteContact(cid: Int64) -> Bool {
+    func deleteContact(cid: Int64) -> Bool
+    {
         do
         {
             let percorso = percorsi.filter(id == cid)

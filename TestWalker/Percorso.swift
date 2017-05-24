@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Percorso {
+class Percorso
+{
     
     let id: Int64?
     
@@ -16,9 +17,9 @@ class Percorso {
     var tempoTot: Double
     var kmTot: Double
     
-    init(id:Int64){
+    init(id:Int64)
+    {
         self.id = id
-        
         data = Date()
         tempoTot = 0.0
         kmTot = 0.0

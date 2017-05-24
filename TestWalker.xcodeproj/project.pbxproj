@@ -19,6 +19,7 @@
 		4D58118D1ED4828000BF88DE /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D58118A1ED4824C00BF88DE /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D6868DF1ED5AE26005AC77B /* MyDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6868DE1ED5AE26005AC77B /* MyDB.swift */; };
 		4D68691B1ED5DAD7005AC77B /* Percorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68691A1ED5DAD7005AC77B /* Percorso.swift */; };
+		4D68691D1ED5DD91005AC77B /* Singolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68691C1ED5DD91005AC77B /* Singolo.swift */; };
 		7E4EF1E0E855042F9CD921A6 /* Pods_TestWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9034638118118145CCFB862 /* Pods_TestWalker.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		4D58118A1ED4824C00BF88DE /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/TestWalker-ewhixkclfjblazcxmpkkhlkkmpdb/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
 		4D6868DE1ED5AE26005AC77B /* MyDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDB.swift; sourceTree = "<group>"; };
 		4D68691A1ED5DAD7005AC77B /* Percorso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percorso.swift; sourceTree = "<group>"; };
+		4D68691C1ED5DD91005AC77B /* Singolo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singolo.swift; sourceTree = "<group>"; };
 		972920208201094D9346F71C /* Pods-TestWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWalker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWalker/Pods-TestWalker.release.xcconfig"; sourceTree = "<group>"; };
 		DA27EC30950BBE9CB80A2A79 /* Pods-TestWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWalker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWalker/Pods-TestWalker.debug.xcconfig"; sourceTree = "<group>"; };
 		E9034638118118145CCFB862 /* Pods_TestWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				4D5811651ED4691700BF88DE /* LaunchScreen.storyboard */,
 				4D5811681ED4691700BF88DE /* Info.plist */,
 				4D68691A1ED5DAD7005AC77B /* Percorso.swift */,
+				4D68691C1ED5DD91005AC77B /* Singolo.swift */,
 			);
 			path = TestWalker;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				4D58115D1ED4691600BF88DE /* AppDelegate.swift in Sources */,
 				4D68691B1ED5DAD7005AC77B /* Percorso.swift in Sources */,
 				4D6868DF1ED5AE26005AC77B /* MyDB.swift in Sources */,
+				4D68691D1ED5DD91005AC77B /* Singolo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
