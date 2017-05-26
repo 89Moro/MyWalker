@@ -38,6 +38,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="btnStart" destination="RiJ-M7-dcA" id="OHu-Kg-CSn"/>
+                        <outlet property="btnStop" destination="1Iz-wy-GIu" id="ufc-Li-ggU"/>
+                        <outlet property="mvMap" destination="HLC-1Z-LtI" id="NWx-r3-VCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

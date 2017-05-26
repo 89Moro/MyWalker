@@ -63,7 +63,7 @@ class MyDB
                 table
                 in
                 table.column(single_id,primaryKey:true)
-                
+                table.foreignKey(path_id, references:percorsi,id, delete:.setNull)
                 table.column(longitude)
                 table.column(latitude)
                 print("Tabella Singoli creata")

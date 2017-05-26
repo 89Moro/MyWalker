@@ -11,12 +11,16 @@ import MapKit
 import CoreLocation
 import SQLite
 
-class ViewController: UIViewController
+class ViewController: UIViewController,MKMapViewDelegate
 {
+    @IBOutlet weak var btnStart: UIButton!
+    @IBOutlet weak var btnStop: UIButton!
+    @IBOutlet weak var mvMap: MKMapView!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        mvMap.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
