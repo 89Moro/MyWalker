@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AppWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>AppWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>TestWalker.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>474BBA9B1EE93A100036B9D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>474BBB521EE955F70036B9D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
