@@ -11,6 +11,8 @@
 		474BBAA11EE93A110036B9D9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BBAA01EE93A100036B9D9 /* TodayViewController.swift */; };
 		474BBAA41EE93A110036B9D9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474BBAA21EE93A110036B9D9 /* MainInterface.storyboard */; };
 		474BBAA81EE93A110036B9D9 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 474BBA9C1EE93A100036B9D9 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		474BBAAD1EE93C2B0036B9D9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BBAA01EE93A100036B9D9 /* TodayViewController.swift */; };
+		474BBAAE1EE9417E0036B9D9 /* MyDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6868DE1ED5AE26005AC77B /* MyDB.swift */; };
 		4D58115D1ED4691600BF88DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D58115C1ED4691600BF88DE /* AppDelegate.swift */; };
 		4D58115F1ED4691600BF88DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D58115E1ED4691600BF88DE /* ViewController.swift */; };
 		4D5811621ED4691700BF88DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5811601ED4691700BF88DE /* Main.storyboard */; };
@@ -82,6 +84,7 @@
 		474BBAA01EE93A100036B9D9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		474BBAA31EE93A110036B9D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		474BBAA51EE93A110036B9D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		474BBAAF1EE943030036B9D9 /* TestWalker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestWalker.entitlements; sourceTree = "<group>"; };
 		4D5811591ED4691600BF88DE /* TestWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D58115C1ED4691600BF88DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D58115E1ED4691600BF88DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +180,7 @@
 		4D58115B1ED4691600BF88DE /* TestWalker */ = {
 			isa = PBXGroup;
 			children = (
+				474BBAAF1EE943030036B9D9 /* TestWalker.entitlements */,
 				4D58115C1ED4691600BF88DE /* AppDelegate.swift */,
 				4D58115E1ED4691600BF88DE /* ViewController.swift */,
 				4D6868DE1ED5AE26005AC77B /* MyDB.swift */,
@@ -322,7 +326,13 @@
 					};
 					4D5811581ED4691600BF88DE = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 6MDR9P48TG;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4D58116C1ED4691700BF88DE = {
 						CreatedOnToolsVersion = 8.2;
@@ -446,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				474BBAA11EE93A110036B9D9 /* TodayViewController.swift in Sources */,
+				474BBAAE1EE9417E0036B9D9 /* MyDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +466,7 @@
 			files = (
 				4D58115F1ED4691600BF88DE /* ViewController.swift in Sources */,
 				4D58115D1ED4691600BF88DE /* AppDelegate.swift in Sources */,
+				474BBAAD1EE93C2B0036B9D9 /* TodayViewController.swift in Sources */,
 				4D68691B1ED5DAD7005AC77B /* Percorso.swift in Sources */,
 				4D6868DF1ED5AE26005AC77B /* MyDB.swift in Sources */,
 				4D68691D1ED5DD91005AC77B /* Singolo.swift in Sources */,
@@ -652,6 +664,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = TestWalker/TestWalker.entitlements;
+				DEVELOPMENT_TEAM = 6MDR9P48TG;
 				INFOPLIST_FILE = TestWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moreno.test.TestWalker;
@@ -666,6 +680,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = TestWalker/TestWalker.entitlements;
+				DEVELOPMENT_TEAM = 6MDR9P48TG;
 				INFOPLIST_FILE = TestWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moreno.test.TestWalker;
@@ -738,6 +754,7 @@
 				474BBAAB1EE93A110036B9D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D5811541ED4691600BF88DE /* Build configuration list for PBXProject "TestWalker" */ = {
 			isa = XCConfigurationList;

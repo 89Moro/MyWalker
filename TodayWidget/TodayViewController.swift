@@ -12,6 +12,8 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var lblDistance: UILabel!
+    
+    var counter:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -30,6 +32,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's an update, use NCUpdateResult.NewData
         
         completionHandler(NCUpdateResult.newData)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        counter = counter + 1
+        lblDistance.text = "\(counter)"
     }
     
 }

@@ -20,7 +20,10 @@ class ViewController: UIViewController,MKMapViewDelegate
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         mvMap.delegate = self
+        
+        let defaults = UserDefaults(suitName: "group.moreno.test.TestWalker")!
 
         // Do any additional setup after loading the view, typically from a nib.
     }
